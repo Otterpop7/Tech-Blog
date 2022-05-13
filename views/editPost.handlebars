@@ -1,0 +1,25 @@
+<article>
+  <a href="/dashboard"> &larr; Back to dashboard</a>
+  <h2>
+    Edit Post
+  </h2>
+  <form class="edit-post-form">
+    <div>
+      <input name="post-title" type="text" value="{{post.title}}" />
+      <input name="post-id" type="hidden" value="{{post.id}}" />
+    </div>
+    <div>
+      <textarea name="post-text">{{post.post_text}}</textarea>
+    </div>
+    <div>
+      Posted by you on
+      {{format_date post.date_created}}
+    </div>
+    <button type="submit">Save post</button>
+    <button type="button" class="delete-post-btn">Delete post</button>
+  </form>
+</article>
+
+<!--Scripts-->
+<script src="/js/editPost.js"></script>
+<script src="/js/deletePost.js"></script>

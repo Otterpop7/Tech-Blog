@@ -1,0 +1,41 @@
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tech Blog</title>
+    <link rel="stylesheet" href="/css/styles.css" />
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>
+          <a href="/">Welcome to the Tech Blog</a>
+        </h1>
+        <nav>
+          {{#if loggedIn}}
+            <a href="/logout" class="btn-no-style">Logout</a>
+          {{else}}
+            <a href="/login">Login</a>
+          {{/if}}
+          <span><a href="/">Home</a></span>
+          <a href="/dashboard">Dashboard</a>
+        </nav>
+        <hr />
+      </header>
+      <main>
+        {{{body}}}
+      </main>
+      <footer>
+        Thanks for visiting!
+      </footer>
+    </div>
+
+    {{#if loggedIn}}
+
+      <script src="/js/idleCheck.js"></script>
+    {{/if}}
+  </body>
+
+</html>
