@@ -18,4 +18,4 @@ npm init, npm i, npm i bcrypt, npm i connect-session-sequelize, npm i dotenv, np
 
 <img src="assets\Tech-Blog.png" alt="Tech Blog img"></img>
 
-[Tech Blog Heroku]()
+[Tech Blog Heroku](https://otterpop-tech-blog.herokuapp.com/login)
